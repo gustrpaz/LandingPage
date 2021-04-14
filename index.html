@@ -6,18 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <script src="https://kit.fontawesome.com/8072771ef9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
     <header>
         <div class="container container_header">
-            <nav class="menu_header">
+            <nav id ="links" class="menu_header">
                 <a href="#inicio">Início</a>
                 <a href="#container_sobre">Sobre</a>
                 <a href="#desafios">Desafios</a>
                 <a href="#endereco">Endereço</a>
+                <a href="#" onclick="BotaoDoMenu()">Fechar</a>
             </nav>
+            <a class="btn_menu" href="#" onclick="BotaoDoMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
 
@@ -41,7 +46,7 @@
                 <div class="box_sobre_textos">
                     <span>participantes</span>
                     <h3 class="h3_sobre">mais de 80 alunos organizados em 16 grupos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3 class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
                 </div>
                 </div>
                 </div>
@@ -85,6 +90,20 @@
     <footer>
         <span>Copyright © 2020 - Escola Senai de Informática</span>
     </footer>
+
+<script>
+    function BotaoDoMenu() {
+        var menu = document.getElementById("links");
+        if (menu.style.display === "flex"){
+              // Esconda o menu 
+              menu.style.display = "none";
+        } else {
+            //Mostre o menu
+            menu.style.display = "flex"
+        }
+    }  
+</script>
+
 </body>
 
 </html> 

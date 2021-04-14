@@ -10,8 +10,8 @@
     .container{
     width:1200px;
     /* background-color:aqua; */
-    /* margin: 0 auto; */
-    margin: 0 42px;
+    margin: 0 auto;
+    /* margin: 0 42px; */
     }
 
     header{
@@ -45,6 +45,12 @@
         text-transform: uppercase;
         font-family: 'Bebas Neue', cursive;
         font-size: 18px;
+    }
+
+    .btn_menu i {
+     display: none;
+     color: white;
+     font-size: 30px;
     }
 
     main{
@@ -144,6 +150,13 @@
         line-height: 25px;
         }
 
+        .lorem{
+            font-family: 'Open Sans', sans-serif;
+            width: 592px;
+            font-size: 18px;
+            line-height: 25px;
+            }
+
         .info{
         background-image:url(../assets_/imagem-fundo-info.png);
         }
@@ -241,10 +254,44 @@
 
         @media (max-width: 420px){
 
-            .container{
-            width: 80vw;
+            .container{               
+            width: 80vw;                      
+            margin: 0 42px;
             }
                
+            .container_header{
+            justify-content: flex-start;
+            align-items: center;
+            }
+
+            .menu_header{
+            display: none;
+            height: 300px;
+            width: 100%;      
+            
+            justify-content: space-evenly;
+            align-items: unset;
+            position: absolute;
+            flex-direction: column;
+            padding-left: 10vw;
+          
+            left: 0;      
+            top: 60px;
+
+            background-color: black;
+        }
+
+            .fa, .fas {
+            font-weight: 900;
+            color: white;
+            font-size: 30px;
+            }
+
+            .btn_menu i {
+             display: inline-block;     
+             color: white;  
+             font-size: 30px;       
+            }
 
             .container_banner{
              display: flex;
@@ -254,7 +301,7 @@
 
             .fundo_banner{
                 height: 100%;
-                width: auto;
+                /* width: auto; */
             }
 
             .box_conteudo{
@@ -301,7 +348,6 @@
             .box_sobre{
                 width: 100%;
                 flex-direction:column;
-
             }
 
             .img_box_sobre{
@@ -309,18 +355,71 @@
             }
 
             .box_sobre_textos{
-                margin-top: 50px;
-            }
+             margin-top: 50px;
+             height: 700px;   
+             margin-bottom: 50px;         
+             }
 
             .h3_sobre{
-                width: auto;
-                font-size: 38px;         
-                margin: 50px 0;  
-            }
+             width: auto;
+             font-size: 38px;         
+             margin: 50px 0;  
+             }
 
             .box_sobre_textos{
-                width: auto;
-                text-align: justify;
+             width: auto;
+             text-align:initial;         
+                    
             }
-                        
+
+            .lorem{
+            width: unset;
+             text-align:justify;
+             display: flex;
+             justify-content: center;
+             font-style:normal;
+             font-weight: normal;
+             font-family: 'Open Sans', sans-serif;          
+            }
+
+            .container_info{
+             flex-direction: column;
+             height: 600px;
+             justify-content: space-around;
+            }
+            
+            .endereco{
+                height: 800px;
+                position: unset;      
+                justify-content: space-evenly;                  
+            }
+
+            .endereco h2{
+                width: unset;
+            }
+
+            .box_endereco{
+             width: 80vw;
+             height: unset;
+             padding: 60px 53px;
+            }
+
+            .box_endereco p{
+              margin-left: 0;
+            }
+
+            .endereco img{
+                position: unset;
+                width: 80vw;
+                margin-bottom: 45px;               
+            }
+
+            footer span{
+                width: 80vw;
+                text-align: center;
+            }
+
+
+
         }
+        
